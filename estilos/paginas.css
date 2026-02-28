@@ -28,19 +28,20 @@ main {
     grid-template-columns: 1fr 60% 1fr;
 }
 
-section {
+section { /* Parte central do conteúdo, que engloba os artigos*/
     display: grid;
     background-color: var(--azulfundo);
     grid-template-columns: 1fr 90% 1fr;
     grid-column: 2;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.247);
 }
 
-article.artigo {
-    margin-top: 10px;
+article.artigo { /* Caixa dos artigos */
+    margin: 10px 0px;
     background-color: whitesmoke;
     border-radius: 10px;   
     grid-column: 2;
-    
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.247);   
 }
 
 article.artigo h2 {
@@ -52,12 +53,21 @@ article.artigo h2 {
     overflow: hidden;
 }
 
-article.artigo p {
-    padding: 10px 10px 0px 10px;
+article.artigo div { /* Engloba o texto do artigo */
+    margin: 10px 0px 10px 0px;
+}
+
+article.artigo p.caput {
+    padding: 0px 10px 3px 10px;
     text-align: justify;
 }
 
-article.artigo>ul {
+article.artigo p.parag {
+    padding: 3px 10px 3px 10px;
+    text-align: justify;
+}
+
+article.artigo ul.caput {
     list-style-type: upper-roman;
     list-style-position: inside;
     text-indent: 20px;
@@ -67,4 +77,26 @@ article.artigo>ul {
         color: red;
         font-weight: bold;
     }
+}
+
+article.artigo ul.parag {
+    list-style-type: upper-roman;
+    list-style-position: inside;
+    text-indent: 20px;
+    padding: 0px 10px;
+    text-align: justify;
+    ::marker {
+        color: blue;
+        font-weight: bold;
+    }
+}
+
+article.artigo li {
+    padding: 3px 0px;
+}
+
+strong.num {
+    color: blue;
+    font-size: 1.1em;
+    text-align: left;
 }
