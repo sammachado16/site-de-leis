@@ -100,3 +100,14 @@ strong.num {
     font-size: 1.1em;
     text-align: left;
 }
+
+strong.dic abbr {
+    text-decoration: none;
+    color: darkred;
+}
+
+strong.dic abbr:hover {
+    background-color: lightcoral;
+    border-radius: 2px;
+    cursor: pointer;
+}
