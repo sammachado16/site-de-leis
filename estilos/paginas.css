@@ -7,28 +7,64 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+:root {
+    --vermelho: #ff1e00;
+    --verde: #7fff7a;
+    --azul: #002255;
+    --verde2: #7A8F35;
+    --vermelho2: #662016;
+    --azulfundo: #c7deff;
+}
+
 header {
-    background-color: lightgreen;
+    background-color: var(--azul);
+    color: white;
     padding: 15px;
 }
 
 main {
     display: grid;
+    background-color: whitesmoke;
     grid-template-columns: 1fr 60% 1fr;
-    margin-top: 20px;
+}
+
+section {
+    display: grid;
+    background-color: var(--azulfundo);
+    grid-template-columns: 1fr 90% 1fr;
+    grid-column: 2;
 }
 
 article.artigo {
-    border-radius: 10px;
-    display: grid;
+    margin-top: 10px;
+    background-color: whitesmoke;
+    border-radius: 10px;   
     grid-column: 2;
     
 }
 
 article.artigo h2 {
-    margin-top: 10px;
+    background-color: red;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     padding: 5px;
     color: white;
-    background-color: red;
     overflow: hidden;
+}
+
+article.artigo p {
+    padding: 10px 10px 0px 10px;
+    text-align: justify;
+}
+
+article.artigo>ul {
+    list-style-type: upper-roman;
+    list-style-position: inside;
+    text-indent: 20px;
+    padding: 0px 10px;
+    text-align: justify;
+    ::marker {
+        color: red;
+        font-weight: bold;
+    }
 }
