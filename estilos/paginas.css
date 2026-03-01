@@ -123,7 +123,13 @@ strong.dic abbr:hover {
     cursor: pointer;
 }
 
-strong.link {
+strong.link a {
     font-weight: bold;
     color: darkviolet;
+    text-decoration: none;
+}
+
+strong.link a:hover {
+    background-color: lightpink;
+    border-radius: 3px;
 }
