@@ -34,6 +34,7 @@ section { /* Parte central do conteúdo, que engloba os artigos*/
     grid-template-columns: 1fr 90% 1fr;
     grid-column: 2;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.247);
+    line-height: 1.3em;
 }
 
 article.artigo { /* Caixa dos artigos */
@@ -57,17 +58,17 @@ article.artigo div { /* Engloba o texto do artigo */
     margin: 10px 0px 10px 0px;
 }
 
-article.artigo p.caput {
+p.caput {
     padding: 0px 10px 3px 10px;
     text-align: justify;
 }
 
-article.artigo p.parag {
+p.parag {
     padding: 3px 10px 3px 10px;
     text-align: justify;
 }
 
-article.artigo ul.caput {
+ul.caput {
     list-style-type: upper-roman;
     list-style-position: inside;
     text-indent: 20px;
@@ -79,7 +80,7 @@ article.artigo ul.caput {
     }
 }
 
-article.artigo ul.parag {
+ul.parag {
     list-style-type: upper-roman;
     list-style-position: inside;
     text-indent: 20px;
@@ -91,14 +92,24 @@ article.artigo ul.parag {
     }
 }
 
-article.artigo li {
+ul.alinea {
+    list-style-type: lower-latin;
+    padding-left: 70px;
+    padding-right: 10px;
+    text-align: justify;
+    ::marker {
+        color: green;
+        font-weight: bold;
+    }
+}
+
+article.artigo li { /*Espaçamento entre cada li de cada lista*/
     padding: 3px 0px;
 }
 
 strong.num {
     color: blue;
     font-size: 1.1em;
-    text-align: left;
 }
 
 strong.dic abbr {
@@ -110,4 +121,9 @@ strong.dic abbr:hover {
     background-color: lightcoral;
     border-radius: 2px;
     cursor: pointer;
+}
+
+strong.link {
+    font-weight: bold;
+    color: darkviolet;
 }
