@@ -24,7 +24,7 @@ header {
 
 main {
     display: grid;
-    background-color: whitesmoke;
+    background-color: #0022554d;
     grid-template-columns: 1fr 60% 1fr;
 }
 
