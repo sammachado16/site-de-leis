@@ -8,7 +8,7 @@
 }
 
 :root {
-    --vermelho: #ff1e00;
+    --vermelho: #ff0000;
     --verde: #7fff7a;
     --azul: #002255;
     --verde2: #7A8F35;
@@ -24,7 +24,7 @@ header {
 
 main {
     display: grid;
-    background-color: #0022554d;
+    background-color: rgb(226, 226, 226);
     grid-template-columns: 1fr 60% 1fr;
 }
 
@@ -42,13 +42,12 @@ article.artigo { /* Caixa dos artigos */
     background-color: whitesmoke;
     border-radius: 10px;   
     grid-column: 2;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.247);   
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.247);
+    overflow: hidden;   
 }
 
 article.artigo h2 {
     background-image:linear-gradient(to right, red, lightcoral);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
     padding: 5px;
     color: white;
     overflow: hidden;
@@ -56,6 +55,34 @@ article.artigo h2 {
 
 article.artigo div { /* Engloba o texto do artigo */
     margin: 10px 0px 10px 0px;
+}
+
+/* Some com o marcador da tag summary */
+details > summary {
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+div#mnemon {
+    margin: 0px;
+}
+
+div#mnemon h3 {
+    background-image: linear-gradient(to right, rgb(0, 61, 0), green);
+    display: block;
+    color: white;
+    padding: 5px;
+}
+
+div#mnemon h3:hover {
+    cursor: pointer;
+}
+
+details p {
+    padding: 5px;
 }
 
 p.caput {
