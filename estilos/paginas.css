@@ -94,19 +94,11 @@ div.par {
     display: grid;
     grid-template-columns: 1fr 98% 1fr;
     text-align: justify;
-    border-radius: 5px;
 }
 
 div.par p {
+    background-color: aquamarine;
     grid-column: 2;
-    background-color: rgb(175, 255, 228);
-    padding: 7px;
-    border-radius: 10px;
-}
-
-div.par ul {
-    grid-column: 2;
-    background-color: rgb(175, 255, 228);
     padding: 7px;
     border-radius: 10px;
 }
@@ -139,8 +131,7 @@ ul.parag {
 ul.alinea {
     grid-column: 2;
     list-style-type: lower-latin;
-    padding-left: 70px;
-    padding-right: 10px;
+    list-style-position: inside;
     text-align: justify;
     ::marker {
         color: green;
