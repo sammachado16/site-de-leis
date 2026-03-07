@@ -28,6 +28,12 @@ textarea#ali {
     height: 50px;    
 }
 
+textarea#parag {
+    margin: 5px;
+    width: 200px;
+    height: 50px;    
+}
+
 input {
     margin: 5px;
 }
