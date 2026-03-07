@@ -72,13 +72,13 @@ div.par {
 }
 
 div.cor {
-    background-color: aquamarine;
+    background-color:  rgb(194, 255, 235);
     grid-column: 2;
     border-radius: 10px;
 }
 
 div.par p {
-    background-color: aquamarine;
+    background-color: rgb(194, 255, 235);
     grid-column: 2;
     padding: 7px;
     border-radius: 10px;
