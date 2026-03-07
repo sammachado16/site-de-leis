@@ -27,3 +27,7 @@ textarea#ali {
     width: 200px;
     height: 50px;    
 }
+
+input {
+    margin: 5px;
+}

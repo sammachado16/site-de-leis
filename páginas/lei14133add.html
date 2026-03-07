@@ -10,11 +10,17 @@
         <p>Número do artigo</p>
         <input type="number" name="artigo" id="artigo">
         <p>Texto do caput</p>
-        <textarea name="art" id="art"></textarea>
-        <p>Inciso do caput</p>
-        <textarea name="ali" id="inc"></textarea>
-        <p>Alínea do inciso</p>
-        <textarea name="ali" id="ali"></textarea>
+        <textarea name="art" id="art"></textarea> <br>
+
+        <input type="submit" value="Adicionar inciso" name="add-inc" id="add-inc" onclick=AddInciso()>
+        <p id="inciso"></p>
+
+        <input type="submit" value="Adicionar alínea" name="add-inc" id="add-ali" onclick=AddAlinea()>
+        <p id="alinea"></p>
+
+        <input type="submit" value="Adicionar parágrafo" name="add-inc" id="add-par">
+        
+        <p id="teste"></p>
     <script src="script.js"></script>
 </body>
 </html>
