@@ -90,9 +90,25 @@ p.caput {
     text-align: justify;
 }
 
-p.parag {
-    padding: 3px 10px 3px 10px;
+div.par {
+    display: grid;
+    grid-template-columns: 1fr 98% 1fr;
     text-align: justify;
+    border-radius: 5px;
+}
+
+div.par p {
+    grid-column: 2;
+    background-color: rgb(175, 255, 228);
+    padding: 7px;
+    border-radius: 10px;
+}
+
+div.par ul {
+    grid-column: 2;
+    background-color: rgb(175, 255, 228);
+    padding: 7px;
+    border-radius: 10px;
 }
 
 ul.caput {
@@ -108,6 +124,7 @@ ul.caput {
 }
 
 ul.parag {
+    grid-column: 2;
     list-style-type: upper-roman;
     list-style-position: inside;
     text-indent: 20px;
@@ -120,6 +137,7 @@ ul.parag {
 }
 
 ul.alinea {
+    grid-column: 2;
     list-style-type: lower-latin;
     padding-left: 70px;
     padding-right: 10px;
