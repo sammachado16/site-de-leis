@@ -96,6 +96,12 @@ div.par {
     text-align: justify;
 }
 
+div.cor {
+    background-color: aquamarine;
+    grid-column: 2;
+    border-radius: 10px;
+}
+
 div.par p {
     background-color: aquamarine;
     grid-column: 2;
@@ -131,7 +137,8 @@ ul.parag {
 ul.alinea {
     grid-column: 2;
     list-style-type: lower-latin;
-    list-style-position: inside;
+    padding-left: 70px;
+    padding-right: 10px;
     text-align: justify;
     ::marker {
         color: green;
