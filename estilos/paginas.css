@@ -43,7 +43,7 @@ article.artigo { /* Caixa dos artigos */
     border-radius: 10px;   
     grid-column: 2;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.247);
-    overflow: hidden;   
+    overflow: hidden; 
 }
 
 article.artigo h2 {
@@ -53,40 +53,15 @@ article.artigo h2 {
     overflow: hidden;
 }
 
-article.artigo div { /* Engloba o texto do artigo */
-    margin: 10px 0px 10px 0px;
-}
-
-/* Some com o marcador da tag summary */
-details > summary {
-  list-style: none;
-}
-
-details > summary::-webkit-details-marker {
-    display: none;
-}
-
-div#mnemon {
-    margin: 0px;
-}
-
-div#mnemon h3 {
-    background-image: linear-gradient(to right, rgb(0, 61, 0), green);
-    display: block;
-    color: white;
-    padding: 5px;
-}
-
-div#mnemon h3:hover {
-    cursor: pointer;
-}
-
-details p {
-    padding: 5px;
+div.linhas {
+    display: grid;
+    grid-auto-rows: auto;
+    row-gap: 10px;
+    padding-bottom: 10px;
 }
 
 p.caput {
-    padding: 0px 10px 3px 10px;
+    padding: 10px 10px 0px 10px;
     text-align: justify;
 }
 
@@ -175,4 +150,32 @@ strong.link a {
 strong.link a:hover {
     background-color: lightpink;
     border-radius: 3px;
+}
+
+/* Some com o marcador da tag summary */
+details > summary {
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+div#mnemon {
+    margin: 0px;
+}
+
+div#mnemon h3 {
+    background-image: linear-gradient(to right, rgb(0, 61, 0), green);
+    display: block;
+    color: white;
+    padding: 5px;
+}
+
+div#mnemon h3:hover {
+    cursor: pointer;
+}
+
+details p {
+    padding: 5px;
 }
