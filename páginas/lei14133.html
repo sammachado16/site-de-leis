@@ -11,8 +11,23 @@
         <h1>Lei 14.133/2021 - Licitações</h1>
     </header>
     <main>
-        <section>
-            <a href="lei14133add.html">Adicionar mais artigos</a>
+        <div class="inserir">
+            <p>Número do artigo</p>
+            <input type="number" name="artigo" id="artigo">
+            <p>Texto do caput</p>
+            <textarea name="art" id="art"></textarea> <br>
+            <input type="submit" value="Novo inciso" name="novo-inc" id="novo-inc" onclick=AddInciso()>
+            <p id="inciso"></p>
+            
+            <input type="submit" value="Nova alínea" name="nova-ali" id="nova-ali" onclick=AddAlinea()>
+            <p id="alinea"></p>
+            <input type="submit" value="Novo parágrafo" name="novo-parag" id="novo-parag">
+            <p id="parag"></p>
+            
+            <p id="teste"></p>
+        </div>
+
+        <section id="artigos">
             <article id="art1" class="artigo">
                 <h2>Art. 1</h2>
                     <div class="linhas">
@@ -77,5 +92,6 @@
             </article>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

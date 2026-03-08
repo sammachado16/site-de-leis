@@ -28,7 +28,53 @@ main {
     grid-template-columns: 1fr 60% 1fr;
 }
 
-section { /* Parte central do conteúdo, que engloba os artigos*/
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Começo dos inputs*/
+
+div.inserir {
+    grid-column: 2;
+}
+
+input#artigo {
+    margin: 5px;
+    width: 50px;
+}
+
+textarea#art {
+    margin: 5px;
+    width: 200px;
+    height: 100px;
+}
+
+textarea#inc {
+    margin: 5px;
+    width: 200px;
+    height: 50px;
+}
+
+textarea#ali {
+    margin: 5px;
+    width: 200px;
+    height: 50px;    
+}
+
+textarea#parag {
+    margin: 5px;
+    width: 200px;
+    height: 50px;    
+}
+
+input {
+    margin: 5px;
+}
+
+/* Fim dos inputs*/
+
+section#artigos { /* Parte central do conteúdo, que engloba os artigos*/
     display: grid;
     background-color: var(--azulfundo);
     grid-template-columns: 1fr 90% 1fr;
