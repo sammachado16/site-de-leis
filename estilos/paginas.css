@@ -39,6 +39,10 @@ div.inserir {
     grid-column: 2;
 }
 
+form#artigo {
+    grid-column: 2;
+}
+
 input#artigo {
     margin: 5px;
     width: 50px;

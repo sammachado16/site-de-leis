@@ -1,7 +1,7 @@
 var res = document.querySelector('p#teste')
 
 function NumArt() {
-    let caput = document.querySelector('div.inserir')
+    let caput = document.querySelector('form#artigo')
 
     let p_a = document.createElement('p')
     let a = document.createElement('input')
@@ -17,7 +17,7 @@ function NumArt() {
 }
 
 function AddCaput() {
-    let caput = document.querySelector('div.inserir')
+    let caput = document.querySelector('form#artigo')
 
     let p_c = document.createElement('p')
     let c = document.createElement('textarea')
@@ -31,21 +31,35 @@ function AddCaput() {
     caput.innerHTML += '<br>'
 }
 
+function Botao(texto) {
+    let inciso = document.querySelector('form#artigo')
+    let i = document.createElement('input')
+    i.setAttribute('type', 'submit')
+    i.setAttribute('value', `${texto}`)
+    i.setAttribute('name', 'novo-inc')
+    i.setAttribute('id', 'novo-inc')
+    if(texto == 'Novo Inciso') {
+         i.addEventListener('click', AddInciso)
+        inciso.appendChild(i)
+    } else if(texto == 'Inserir Artigo') {
+        i.addEventListener('click', ArtigoIns)
+        inciso.appendChild(i)
+    }
+}
+
+function ArtigoIns() {
+
+}
+
 function AddArtigo() {
     NumArt()
     AddCaput()
-    let inciso = document.querySelector('div.inserir')
-    let i = document.createElement('input')
-    i.setAttribute('type', 'submit')
-    i.setAttribute('value', 'Novo Inciso')
-    i.setAttribute('name', 'novo-inc')
-    i.setAttribute('id', 'novo-inc')
-    i.addEventListener('click', AddInciso)
-    inciso.appendChild(i)  
+    Botao('Novo Inciso')
+    Botao('Inserir Artigo')
 }
 
 function AddInciso() {
-    let inciso = document.querySelector('div.inserir')
+    let inciso = document.querySelector('form#artigo')
     let i = document.createElement('textarea')
     i.setAttribute('id', 'inc')
     inciso.innerHTML += '<br> Inciso <br>'
@@ -59,7 +73,7 @@ function AddInciso() {
     inciso.appendChild(add_inc)
     inciso.innerHTML += '<br>'
 
-    let alinea = document.querySelector('div.inserir')
+    let alinea = document.querySelector('form#artigo')
     let a = document.createElement('input')
     a.setAttribute('type', 'submit')
     a.setAttribute('value', 'Nova Alínea')
@@ -70,7 +84,7 @@ function AddInciso() {
 }
 
 function AddAlinea() {
-    let alinea = document.querySelector('div.inserir')
+    let alinea = document.querySelector('form#artigo')
     let a = document.createElement('textarea')
     a.setAttribute('id', 'ali')
     alinea.innerHTML += '<br> Alínea <br>'
