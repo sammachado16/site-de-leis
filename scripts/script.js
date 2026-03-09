@@ -48,7 +48,13 @@ function Botao(texto) {
 }
 
 function ArtigoIns() {
-    
+    let artigos = document.querySelector('section#artigos')
+    let artigo = document.createElement('article')
+    let titulo = document.createElement('h2')
+    titulo.innerHTML = 'Art. 4'
+    artigo.setAttribute('id', `art4`)
+    artigos.appendChild(artigo)
+    artigo.appendChild(titulo)
 }
 
 function AddArtigo() {
