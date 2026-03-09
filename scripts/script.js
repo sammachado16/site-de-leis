@@ -48,7 +48,7 @@ function Botao(texto) {
 }
 
 function ArtigoIns() {
-
+    
 }
 
 function AddArtigo() {
