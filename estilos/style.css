@@ -12,6 +12,10 @@ header {
     padding: 15px;
 }
 
+body {
+    background-color: rgb(194, 255, 189);
+}
+
 main h2 {
     padding: 10px;
 }
