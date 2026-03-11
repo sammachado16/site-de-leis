@@ -93,7 +93,7 @@ article.artigo { /* Caixa dos artigos */
     border-radius: 10px;   
     grid-column: 2;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.247);
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 article.artigo h2 {
@@ -108,6 +108,11 @@ div.linhas {
     grid-auto-rows: auto;
     row-gap: 10px;
     padding-bottom: 10px;
+}
+
+div.box {
+    padding-bottom: 5px;
+
 }
 
 p.caput {
