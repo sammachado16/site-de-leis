@@ -30,6 +30,16 @@ header nav a {
     padding: 10px;
     background-color: aquamarine;
     border-radius: 5px;
+    text-decoration: none;
+    color: #002255;
+}
+
+header nav a:hover{
+    padding: 10px;
+    background-color: rgb(35, 255, 182);
+    border-radius: 5px;
+    color: #1e40ff;
+    font-weight: bold;
 }
 
 main {
